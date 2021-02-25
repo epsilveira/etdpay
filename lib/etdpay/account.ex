@@ -21,7 +21,5 @@ defmodule Etdpay.Account do
     |> cast(params, @required_params)
     |> validate_required(@required_params)
     |> check_constraint(:balance, name: :balance_must_be_positive_or_zero)
-
   end
-
 end
