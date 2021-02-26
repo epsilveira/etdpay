@@ -33,12 +33,14 @@ Para iniciar o seu servidor Phoenix:
 
 - Necessário instalar: Elixir, Phoenix, Postgres
 - Na pasta config, confirme as configurações do banco de dados em dev.exs, test.exs e do Basic Auth no config.exs
-      Ou crie o arquivo .env na raiz com o padrão:       
-        > export DB_USERNAME="usuario"
-        > export DB_PASSWORD="senha"
-        > export DB_HOSTNAME="endereco"
-        > export AUTH_USERNAME="banana"
-        > export AUTH_PASSWORD="nanica123"
+      Ou crie o arquivo .env na raiz com o padrão:   
+      <ul style="list-style-type:none;">    
+        <li>export DB_USERNAME="usuario"</li>
+        <li>export DB_PASSWORD="senha"</li>
+        <li>export DB_HOSTNAME="endereco"</li>
+        <li>export AUTH_USERNAME="banana"</li>
+        <li>export AUTH_PASSWORD="nanica123"</li>
+      </ul>
       Execute <b>source .env</b> antes de iniciar o server.
 - Instale as dependências com `mix deps.get`
 - Crie o banco de dados e rode as migrations rodando `mix ecto.setup`
