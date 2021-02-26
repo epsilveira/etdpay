@@ -32,16 +32,14 @@ O Etdpay é uma aplicação que simula uma API de pagamentos entre usuários, se
 Para iniciar o seu servidor Phoenix:
 
 - Necessário instalar: Elixir, Phoenix, Postgres
-- Na pasta config, confirme as configurações do banco de dados em dev.exs, test.exs e do Basic Auth no config.exs
-      Ou crie o arquivo .env na raiz com o padrão:   
-      <ul style="list-style-type:none;">    
-        <li>export DB_USERNAME="usuario"</li>
-        <li>export DB_PASSWORD="senha"</li>
-        <li>export DB_HOSTNAME="endereco"</li>
-        <li>export AUTH_USERNAME="banana"</li>
-        <li>export AUTH_PASSWORD="nanica123"</li>
-      </ul>
-      Execute <b>source .env</b> antes de iniciar o server.
+- Na pasta config, confirme as configurações do banco de dados em dev.exs, test.exs e do Basic Auth no config.exs</br>
+      Ou crie o arquivo .env na raiz com o padrão:</br>        
+        export DB_USERNAME="usuario"</br>
+        export DB_PASSWORD="senha"</br>
+        export DB_HOSTNAME="endereco"</br>
+        export AUTH_USERNAME="banana"</br>
+        export AUTH_PASSWORD="nanica123"</br>
+      Execute <b>source .env</b> antes de iniciar o server.</br>
 - Instale as dependências com `mix deps.get`
 - Crie o banco de dados e rode as migrations rodando `mix ecto.setup`
 - Inicie o servidor Phoenix com `mix phx.server`
