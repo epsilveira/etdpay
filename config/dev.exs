@@ -1,14 +1,11 @@
 use Mix.Config
 
-#secret.csv has only the password of database, without " (like - postgres)
-{:ok, pass} = File.read("secret.csv")
-
 # Configure your database
 config :etdpay, Etdpay.Repo,
-  username: "postgres",
-  password: pass,
+  username: System.get_env("DB_USERNAME"),
+  password: System.get_env("DB_PASSWORD"),
   database: "etdpay_dev",
-  hostname: "localhost",
+  hostname: System.get_env("DB_HOSTNAME"),
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

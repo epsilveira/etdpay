@@ -1,7 +1,7 @@
 defmodule Etdpay.Accounts.Operation do
   alias Ecto.Multi
 
-  alias Etdpay.{Account, Repo}
+  alias Etdpay.Account
 
   def call(%{"id" => id, "value" => value}, operation) do
     operation_name = account_operation_name(operation)

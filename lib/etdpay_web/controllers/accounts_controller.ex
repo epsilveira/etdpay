@@ -9,7 +9,7 @@ defmodule EtdpayWeb.AccountsController do
   def deposit(conn, params) do
     with {:ok, %Account{} = account} <- Etdpay.deposit(params) do
       conn
-      |> put_status(:created)
+      |> put_status(:ok)
       |> render("update.json", account: account)
     end
   end
@@ -17,7 +17,7 @@ defmodule EtdpayWeb.AccountsController do
   def withdraw(conn, params) do
     with {:ok, %Account{} = account} <- Etdpay.withdraw(params) do
       conn
-      |> put_status(:created)
+      |> put_status(:ok)
       |> render("update.json", account: account)
     end
   end
@@ -25,7 +25,7 @@ defmodule EtdpayWeb.AccountsController do
   def transaction(conn, params) do
     with {:ok, %TransactionResponse{} = transaction} <- Etdpay.transaction(params) do
       conn
-      |> put_status(:created)
+      |> put_status(:ok)
       |> render("transaction.json", transaction: transaction)
     end
   end
