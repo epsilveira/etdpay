@@ -39,7 +39,7 @@ Para iniciar o seu servidor Phoenix:
         export DB_HOSTNAME="endereco"</br>
         export AUTH_USERNAME="banana"</br>
         export AUTH_PASSWORD="nanica123"</br>
-      Execute <b>source .env</b> antes de iniciar o server.</br>
+      </br>Execute <b>source .env</b> antes de iniciar o server.</br>
 - Instale as dependências com `mix deps.get`
 - Crie o banco de dados e rode as migrations rodando `mix ecto.setup`
 - Inicie o servidor Phoenix com `mix phx.server`
